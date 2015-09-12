@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<ul class="conference-list list-unstyled">
+{% assign sorted_apps = (site.apps | sort: 'name') %}
+{% for app in sorted_apps %}
+  <li>
+    {{app.name}}
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
