@@ -6,7 +6,7 @@ layout: default
 {% assign sorted_apps = (site.apps | sort: 'name') %}
 {% for app in sorted_apps %}
   <li>
-    <h2><a href="{{app.url}}">{{app.name}}</a> - {{app.category}}</h2>
+    <h2><a href="{{app.playstore}}">{{app.name}}</a> - {{app.category}}</h2>
     <span class="author">{{app.author}}</span>
   </li>
 {% endfor %}
